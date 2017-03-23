@@ -1,0 +1,36 @@
+<div class="calculator-container">
+
+	<div class="calculator">
+		<p class="result">{{result}}</p>
+		<p class="oparator">{{oparator}}</p>
+		<p class="current-value">{{currentValue}}</p>
+	</div>
+
+	<div class="number-key clearfix">
+		<div class="left">
+			<div><button>CE</button></div>
+			<div><button>C</button></div>
+			<div><button><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></button></div>
+			<div><button ng-click="onClickValue(1)">1</button></div>
+			<div><button ng-click="onClickValue(2)">2</button></div>
+			<div><button ng-click="onClickValue(3)">3</button></div>
+			<div><button ng-click="onClickValue(4)">4</button></div>
+			<div><button ng-click="onClickValue(5)">5</button></div>
+			<div><button ng-click="onClickValue(6)">6</button></div>
+			<div><button ng-click="onClickValue(7)">7</button></div>
+			<div><button ng-click="onClickValue(8)">8</button></div>
+			<div><button ng-click="onClickValue(9)">9</button></div>
+			<div class="bottom">
+				<div><button>0</button></div>
+			</div>
+		</div>
+		<div class="right">
+			<div><button ng-click="onClickOparator('+')">+</button></div>
+			<div><button ng-click="onClickOparator('-')">-</button></div>
+			<div><button ng-click="onClickOparator('*')">*</button></div>
+			<div><button ng-click="onClickOparator('/')">/</button></div>
+			<div><button>=</button></div>
+		</div>
+	</div>
+
+</div>

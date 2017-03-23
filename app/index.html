@@ -1,18 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="calculator">
 <head>
 	<meta charset="UTF-8">
 	<title>Calculator</title>
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="style/main.css">
+
 </head>
-<body>
-	<div class="calculator-container container">
-		<div class="col-xs-12">
-			<div class="calculator">
-				<p class="result"></p>
-				<p class="oparator"></p>
-				<p class="current-value"></p>
-			</div>
-		</div>
-	</div>
+<body class="container">
+
+<ng-view></ng-view>
+
+<!-- INJECT DEPEDENCIES -->
+<script src="libs/jquery-3.1.0.js"></script>
+<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="libs/angular/angular.min.js"></script>
+<script src="libs/angular/angular-route.min.js"></script>
+
+<!-- INJECT COMPONENTS -->
+<script src="source/components/component.js"></script>
+
+<!-- INJECT APPLICATION -->
+<script src="source/application.js"></script>
+
+<!-- INJECT COMPONENTS -->
+<script src="source/components/calculator/controller.js"></script>
+
+<!-- INJECT CONTROLLER -->
+<script src="source/pods/dashboard/controller.js"></script>
+
 </body>
 </html>

@@ -2,12 +2,8 @@
   "name": "Calculator",
   "version": "1.0.0",
   "description": "Calculator Tool",
-  "dependencies": {
-    "requirejs": "~2.1.9"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "bower": "^1.3.3"
-  },
-  "cordovaPlugins": [],
-  "cordovaPlatforms": []
+
+  }
 }
